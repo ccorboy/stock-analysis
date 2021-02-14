@@ -96,10 +96,6 @@ End Sub
 
 ### Refactored Analysis
 ```
- tickerVolumes(tickerIndex) = tickerVolumes(tickerIndex) + Cells(i, 8).Value
-```
-
-
     '1a) Create a ticker Index
     Dim tickerIndex As Single
         tickerIndex = 0
@@ -151,13 +147,30 @@ End Sub
         
         
     Next i
+```
+
+### Analysis
+#### Stock Data 2017
+![image](Resources/stock_data_2017.png)
+
+#### Stock Data 2018
+![image](Resources/stock_data_2018.png)
+
 ### Elapsed Time: Original Analysis
-![image](resources/Theater_Outcomes_vs_Launch.png) 
+#### 2017
+![image](Resources/orig_2017.png) 
+#### 2018
+![image](Resources/orig_2018.png)
+
 ### Elapsed Time: Refactored Analysis
+#### 2017
+![image](Resources/VBA_Challenge_2017.png)
+#### 2018
+![image](Resources/VBA_Challenge_2018.png)
 
 ## Summary
 ### Advatages and Disadvantages of Refactoring Code
 The main advantages of refactoing code is creating a script that is easier to read, but more importantly having a more efficient code. Efficiency in a script will make it possibile to analyze and collect data faster. A disadvantage is ruining an already successful code. Taking what is already capable of performing an analysis and making it better is the main objective in this challenge, however it is essential that it is refactored correctly.  
 
 ### Original Script Versus Refactored Script
-In this particular project it was beneficial to refactor the original code. It will allow further analyses be performed on datasets that are much larger holding potentially thousands of stocks as compared to our dataset with only twelve. The diffiuclt part in refactoring this code is comprehending the differences in syntax between the origninal and refactored scripts. Without the proper usage of VBA language, the refactoring can take much longer than desired. 
+In this particular project it was beneficial to refactor the original code. It will allow further analyses be performed on datasets that are much larger holding potentially thousands of stocks as compared to our dataset with only twelve. The diffiuclt part in refactoring this code is comprehending the differences in syntax between the origninal and refactored scripts. Without the proper usage of VBA language, the refactoring can take much longer than desired. After the refacotring of the code it is confirmed that the new script is more efficient and therefore the objective was reached successfully. 
